@@ -20,8 +20,8 @@
 
 /* _____________ Your Code Here _____________ */
 
-type TupleToObject<Tuple extends readonly (string | number)[]> = {
-    [KEY in Tuple[number]]: KEY 
+type TupleToObject<Tuple extends readonly any[]> = {
+    [Key in Tuple[number]]: Key
 }
 
 /* _____________ Test Cases _____________ */
